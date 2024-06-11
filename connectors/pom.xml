@@ -2,7 +2,7 @@
     <parent>
         <groupId>com.github.openstack4j.core</groupId>
         <artifactId>openstack4j-parent</artifactId>
-        <version>3.13-SNAPSHOT</version>
+        <version>3.12-KITT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.openstack4j.core.connectors</groupId>
@@ -12,47 +12,13 @@
     <url>https://github.com/openstack4j/openstack4j/</url>
     <packaging>pom</packaging>
 
-    <profiles>
-        <profile>
-            <id>java-11</id>
-            <activation>
-                <jdk>11</jdk>
-            </activation>
-            <modules>
-                <module>http-connector</module>
-                <module>httpclient</module>
-                <module>jersey2</module>
-                <module>okhttp</module>
-                <module>resteasy</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>java-17</id>
-            <activation>
-                <jdk>17</jdk>
-            </activation>
-            <modules>
-                <!-- <module>http-connector</module> org.openstack4j.connectors.http.HttpCommand.setRequestMethodUsingWorkaroundForJREBug -->
-                <module>httpclient</module>
-                <!--<module>jersey2</module> https://github.com/eclipse-ee4j/jersey/issues/4825 -->
-                <module>okhttp</module>
-                <module>resteasy</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>java-21</id>
-            <activation>
-                <jdk>21</jdk>
-            </activation>
-            <modules>
-                <!-- <module>http-connector</module> org.openstack4j.connectors.http.HttpCommand.setRequestMethodUsingWorkaroundForJREBug -->
-                <module>httpclient</module>
-                <!--<module>jersey2</module> https://github.com/eclipse-ee4j/jersey/issues/4825 -->
-                <module>okhttp</module>
-                <module>resteasy</module>
-            </modules>
-        </profile>
-    </profiles>
+    <modules>
+        <!-- <module>http-connector</module> org.openstack4j.connectors.http.HttpCommand.setRequestMethodUsingWorkaroundForJREBug -->
+        <module>httpclient</module>
+        <!--<module>jersey2</module> https://github.com/eclipse-ee4j/jersey/issues/4825 -->
+        <module>okhttp</module>
+        <module>resteasy</module>
+    </modules>
 
     <dependencies>
         <dependency>

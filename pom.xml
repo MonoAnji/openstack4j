@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.openstack4j.core</groupId>
     <artifactId>openstack4j-parent</artifactId>
-    <version>3.13-SNAPSHOT</version>
+    <version>3.12-KITT</version>
     <name>OpenStack4j Parent</name>
     <description>OpenStack Java API</description>
     <url>https://github.com/openstack4j/openstack4j/</url>
@@ -265,7 +265,7 @@
             <dependency>
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
-                <version>7.5.1</version>
+                <version>7.7.0</version>
                 <scope>test</scope>
                 <exclusions>
                     <exclusion>
@@ -279,12 +279,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>maven-tacoma</id>
+            <url>https://nexus.jena.de/repository/maven-tacoma</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>maven-tacoma</id>
+            <url>https://nexus.jena.de/repository/maven-tacoma</url>
         </repository>
     </distributionManagement>
 
